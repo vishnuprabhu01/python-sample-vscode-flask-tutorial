@@ -24,7 +24,7 @@ pipeline{
         }
         stage('SonarQube analysis') {
             steps{
-                withSonarQubeEnv('SONAR_MAIN ') {
+                withSonarQubeEnv('SONAR_MAIN') {
                    sh '/home/ubuntu/root_workspace/workspace/python_free/sonar-scanner-4.7.0.2747-linux/bin/sonar-scanner \
                                                 -Dsonar.projectKey=my_python-1 \
 												-Dsonar.sources=. \
