@@ -4,7 +4,7 @@ pipeline{
         stage('source code'){
             steps{
                 git url:'https://github.com/vishnuprabhu01/python-sample-vscode-flask-tutorial.git',
-                    branch:'sprint_develop'
+                    branch:'master'
             }
         }
         stage ('install dependencies'){
