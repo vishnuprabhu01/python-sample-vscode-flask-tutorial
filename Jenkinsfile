@@ -19,7 +19,7 @@ pipeline{
         stage('Test Results'){
             steps{
                 sh 'pip install pytest'
-                sh '/home/jenkins/.local/bin/pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml'
+                sh '/home/ubuntu/.local/bin/pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml'
                 }
         }
         stage('SonarQube analysis') {
